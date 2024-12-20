@@ -1,0 +1,9 @@
+Set a very vague goal - local weather prediction. We can use very concrete events to track success - such as rain (if it happened or not). 
+
+1st step - data acquisition.
+
+We have two ways of acquiring data so far:
+	ims.gov.il - Israeli meteorological service - provides bulk downloads and the API access potentially could be acquired with an email. Since doing this on the weekend, only bulk downloads as for now. Limited to 3 years back.
+	openweathermap - Provides 1000 API calls per day for free, 2000 calls top for a couple pounds. Data has about 1h granularity (at least, for rain)
+
+Update on downloading data from ims.gov.il: their webpage for downloading bulk data often refuses to download data because "the number of records is too big", even though the resulting csv file is only a couple MB big. This is unserious and seems like a huge waste of time to try and acquire data from it.
